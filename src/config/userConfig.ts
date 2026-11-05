@@ -200,6 +200,7 @@ export const USER_CONFIG = {
     "Pytest"
   ],
   github: "https://github.com/Dhrub404/ai-job-finder",
+  demo: "https://t.me/Bot_Jobfinder_bot",
   demoImage: "/projects/aiJobFinder.png",
   featured: true,
   status: "v1.0",
@@ -213,6 +214,25 @@ export const USER_CONFIG = {
   challenges: "Building a reliable multi-source job aggregation pipeline that handles different career-site structures, normalizes inconsistent job data, filters India-eligible opportunities, and prevents duplicate notifications while running on free-tier cloud infrastructure.",
   learnings: "Designing an automated serverless architecture using GitHub Actions, Turso, and Vercel; building scalable Python scraping adapters; integrating Telegram webhooks; and implementing AI-powered job matching with persistent user preferences."
 },
+
+
+{
+      id: "portfolio-website",
+      title: "Personal Portfolio Website",
+      category: "Web Apps",
+      shortDesc: "A dynamic portfolio showcasing projects, skills, certifications, and contact information.",
+      longDesc: "A personal brand website presenting my projects, technical skills, and certifications in a modern, interactive layout. All content comes from one central configuration file, so updating the portfolio is quick.",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React"],
+      github: "https://github.com/Dhrub404/Portfolio",
+      demo: "/",
+      demoImage: "/projects/portfolio-website.svg",
+      featured: true,
+      status: "Live Portfolio",
+      metrics: { content: "Config-driven", animations: "Framer Motion", language: "TypeScript" },
+      challenges: "Keeping a polished animated UI fast while making content easy to update.",
+      learnings: "Using a centralised configuration model so adding a project or certificate is a one-file change."
+    },
+
         {
       id: "resume-ai",
       title: "Resume AI: Intelligent Career Builder",
@@ -228,39 +248,44 @@ export const USER_CONFIG = {
       challenges: "Connecting the OpenAI API to the resume editor so suggestions arrive quickly and apply cleanly to the content being edited.",
       learnings: "Building a decoupled React and Django REST stack with JWT authentication, and integrating an LLM API into a real product workflow."
     },
-    {
-      id: "ecommerce-platform",
-      title: "VoltCart E-Commerce Platform",
-      category: "Full-Stack Web App",
-      shortDesc: "A full-stack online store with a React frontend and a Django REST backend.",
-      longDesc: "A full-stack e-commerce application with product browsing, cart, and secure user authentication. The React frontend talks to a Django REST Framework backend through JWT-protected APIs.",
-      techStack: ["React.js", "Django REST", "JWT", "Python"],
-      github: "",
-      demo: "",
-      demoImage: "/projects/ecommerce_demo.png",
-      featured: true,
-      status: "Live v1.0",
-      metrics: { frontend: "React", backend: "Django REST", auth: "JWT" },
-      challenges: "Keeping the React frontend and Django API in sync across authentication, cart state, and product data.",
-      learnings: "Designing clean REST endpoints and handling JWT-based authentication across a decoupled frontend and backend."
-    },
     
+    
+
     {
-      id: "portfolio-website",
-      title: "Personal Portfolio Website",
-      category: "Web Apps",
-      shortDesc: "A dynamic portfolio showcasing projects, skills, certifications, and contact information.",
-      longDesc: "A personal brand website presenting my projects, technical skills, and certifications in a modern, interactive layout. All content comes from one central configuration file, so updating the portfolio is quick.",
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React"],
-      github: "https://github.com/Dhrub404/Portfolio",
-      demo: "/",
-      demoImage: "/projects/portfolio-website.svg",
-      featured: true,
-      status: "Live Portfolio",
-      metrics: { content: "Config-driven", animations: "Framer Motion", language: "TypeScript" },
-      challenges: "Keeping a polished animated UI fast while making content easy to update.",
-      learnings: "Using a centralised configuration model so adding a project or certificate is a one-file change."
-    }
+  id: "growthlog",
+  title: "GrowthLog: Personal Growth & Life Tracking Platform",
+  category: "Full-Stack Development",
+  shortDesc: "A full-stack personal development platform to track daily habits, mood, energy, goals, and personal growth through intelligent analytics and journaling.",
+  longDesc: "GrowthLog is a full-stack personal development platform designed to help users track their progress and build intentional daily routines. It combines daily journaling, mood and energy tracking, goal management, task planning, cognitive reframing, and personal reflections into one unified workspace. The platform features interactive analytics dashboards with heatmaps, life balance radar charts, and mood-versus-energy trends using Recharts. Built with React and FastAPI, it uses MongoDB for persistent storage, Pydantic v2 for strict data validation, and JWT-based authentication with email verification. The application also includes a comprehensive 70+ test suite covering authentication, security, data integrity, and application boundaries.",
+  techStack: [
+    "React 18",
+    "React Router",
+    "FastAPI",
+    "Python",
+    "MongoDB",
+    "PyMongo",
+    "Pydantic v2",
+    "Recharts",
+    "JWT Authentication",
+    "Pytest",
+    "Docker"
+  ],
+  github: "https://github.com/Dhrub404/GrowthLog",
+  demo: "https://growth-log-two.vercel.app/",
+  demoImage: "/projects/growthlog.png",
+  featured: true,
+  status: "v2.2.0",
+  metrics: {
+    testSuite: "70+ Automated Tests",
+    coreModules: "9+ Personal Growth Modules",
+    analytics: "Heatmaps + Radar Charts + Trends",
+    authentication: "JWT + Email Verification",
+    architecture: "React + FastAPI + MongoDB"
+  },
+  challenges: "Designing a modular full-stack architecture that connects multiple personal development modules while maintaining consistent data validation, secure authentication, and reliable analytics across the application.",
+  learnings: "Building modular REST APIs with FastAPI, implementing secure JWT authentication and Pydantic validation, integrating MongoDB with React, creating interactive data visualizations, and developing comprehensive automated test suites."
+},
+
   ],
   achievements: [],
 

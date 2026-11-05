@@ -57,21 +57,7 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
             parsed.certifications = USER_CONFIG.certifications;
             parsed.experiences = USER_CONFIG.experiences;
             parsed.profile = USER_CONFIG.profile;
-            
-            // Merge source projects into stale cache so newly added projects appear automatically
-            if (parsed.projects) {
-              const storedProjects = Array.isArray(parsed.projects) ? parsed.projects : [];
-              parsed.projects = USER_CONFIG.projects.map((sourceProj: any) => {
-                const savedProj = storedProjects.find((p: any) => p.id === sourceProj.id);
-                return {
-                  ...sourceProj,
-                  ...(savedProj || {}),
-                  demoImage: sourceProj.demoImage || savedProj?.demoImage,
-                  github: sourceProj.github || savedProj?.github,
-                  demo: sourceProj.demo || savedProj?.demo
-                };
-              });
-            }
+            parsed.projects = USER_CONFIG.projects;
 
             setConfig(parsed);
           }

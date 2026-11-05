@@ -21,6 +21,15 @@ import { Github } from "@/components/ui/Icons";
  * 3. Renders a grid of `Card` components, displaying key information like tech stack and status.
  * 4. Manages an interactive framer-motion modal (`selectedProject`) that locks background scrolling and displays in-depth details (metrics, challenges, Github links) when a card is clicked.
  */
+const getExternalUrl = (url?: string) => {
+  if (!url) return "/404";
+  if (url.startsWith("/") || url.startsWith("#")) return url;
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    return `https://${url}`;
+  }
+  return url;
+};
+
 export default function Projects() {
   const { config } = usePortfolioConfig();
   const projects = config.projects;
@@ -186,20 +195,22 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center space-x-2 relative z-20">
-                  <a 
-                    href={proj.demo || "/404"} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    onClick={(e) => { 
-                      e.stopPropagation(); 
-                      playClickSound(); 
-                    }}
-                    className="flex items-center space-x-1 p-1 px-2 bg-cyan-glow/10 border border-cyan-glow/30 text-cyan-glow hover:bg-cyan-glow hover:text-black rounded transition-colors"
-                    title="Live Demo"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    <span className="font-pixel text-[8px] uppercase tracking-wider hidden xl:inline">DEMO</span>
-                  </a>
+                  {proj.demo ? (
+                    <a 
+                      href={getExternalUrl(proj.demo)} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      onClick={(e) => { 
+                        e.stopPropagation(); 
+                        playClickSound(); 
+                      }}
+                      className="flex items-center space-x-1 p-1 px-2 bg-cyan-glow/10 border border-cyan-glow/30 text-cyan-glow hover:bg-cyan-glow hover:text-black rounded transition-colors"
+                      title="Live Demo"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span className="font-pixel text-[8px] uppercase tracking-wider hidden xl:inline">DEMO</span>
+                    </a>
+                  ) : null}
                   {proj.github ? (
                     <a 
                       href={proj.github} 
@@ -321,16 +332,18 @@ export default function Projects() {
 
                 {/* Footer action buttons */}
                 <div className="p-6 bg-[#070b0c] border-t border-cyan-glow/10 flex justify-end items-center gap-4 flex-wrap relative z-20">
-                  <a
-                    href={selectedProject.demo || "/404"}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => { e.stopPropagation(); playClickSound(); }}
-                    className="relative z-50 inline-flex items-center space-x-2 px-5 py-2.5 border border-cyan-glow/40 hover:border-cyan-glow hover:bg-cyan-glow/10 font-mono text-sm font-semibold tracking-wider text-cyan-glow transition-colors rounded-lg cursor-pointer"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>LIVE_DEMO</span>
-                  </a>
+                  {selectedProject.demo ? (
+                    <a
+                      href={getExternalUrl(selectedProject.demo)}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => { e.stopPropagation(); playClickSound(); }}
+                      className="relative z-50 inline-flex items-center space-x-2 px-5 py-2.5 border border-cyan-glow/40 hover:border-cyan-glow hover:bg-cyan-glow/10 font-mono text-sm font-semibold tracking-wider text-cyan-glow transition-colors rounded-lg cursor-pointer"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>LIVE_DEMO</span>
+                    </a>
+                  ) : null}
                   {selectedProject.reportUrl && (
                     <a
                       href={selectedProject.reportUrl}

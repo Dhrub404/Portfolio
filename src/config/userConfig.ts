@@ -248,7 +248,7 @@ export const USER_CONFIG = {
       longDesc: "A personal brand website presenting my projects, technical skills, and certifications in a modern, interactive layout. All content comes from one central configuration file, so updating the portfolio is quick.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React"],
       github: "https://github.com/Dhrub404/Portfolio",
-      demo: "/",
+      demo: "https://portfolio-ramc.vercel.app/",
       demoImage: "/projects/portfolio-website.svg",
       featured: true,
       status: "Live Portfolio",

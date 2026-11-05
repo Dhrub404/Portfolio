@@ -4,11 +4,11 @@ import SmoothScroll from "@/components/ui/SmoothScroll";
 import { PortfolioProvider } from "@/context/PortfolioConfigContext";
 
 export const metadata: Metadata = {
-  title: "Alok Singh | Computer Science Engineer & Software Developer",
-  description: "Interactive futuristic Minecraft-inspired digital portfolio universe showcasing data science projects, competitive programming, and certifications.",
-  keywords: ["Computer Science", "Software Engineer", "Portfolio", "Data Science", "Machine Learning", "Next.js", "React"],
+  title: "DHRUB MAHAJAN | Information Science Engineer & Full-Stack Developer",
+  description: "Interactive futuristic Minecraft-inspired digital portfolio universe showcasing full-stack web applications, MERN stack, and Django projects.",
+  keywords: ["Information Science", "Software Engineer", "Full-Stack Developer", "Portfolio", "MERN Stack", "Django", "Next.js", "React"],
   openGraph: {
-    title: "Alok Singh | Computer Science Engineer & Software Developer",
+    title: "DHRUB MAHAJAN | Information Science Engineer & Full-Stack Developer",
     description: "Interactive futuristic Minecraft-inspired digital portfolio universe.",
     type: "website",
     locale: "en_US",

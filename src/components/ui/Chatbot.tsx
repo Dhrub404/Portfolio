@@ -87,7 +87,7 @@ export default function Chatbot() {
     } catch (err: any) {
       setMessages((prev) => [
         ...prev,
-        { id: (Date.now() + 1).toString(), role: "assistant", content: "I apologize, but I'm experiencing a temporary issue. Please try again in a moment, or explore the sections on this website for details about Alok!" },
+        { id: (Date.now() + 1).toString(), role: "assistant", content: "I apologize, but I'm experiencing a temporary issue. Please try again in a moment, or explore the sections on this website for details about Dhrub!" },
       ]);
     } finally {
       setIsLoading(false);
@@ -257,7 +257,7 @@ export default function Chatbot() {
                   <div className="text-center text-gray-500 font-mono text-xs space-y-2">
                     <img src="/avatar.svg" alt="Nexus AI" className="w-12 h-12 mx-auto opacity-70 p-1 bg-emerald/10 border border-emerald/30 rounded-full mb-4 shadow-[0_0_15px_rgba(80,200,120,0.2)]" />
                     <p>INITIALIZING SECURE CONNECTION...</p>
-                    <p>I am Nexus AI, Alok's digital assistant.</p>
+                    <p>I am Nexus AI, Dhrub's digital assistant.</p>
                   </div>
                   
                   <div className="flex flex-wrap justify-center gap-2 max-w-full mx-auto">

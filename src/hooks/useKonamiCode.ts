@@ -1,6 +1,7 @@
+
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const KONAMI_CODE = [
   "ArrowUp",
@@ -12,35 +13,49 @@ const KONAMI_CODE = [
   "ArrowLeft",
   "ArrowRight",
   "b",
-  "a"
+  "a",
 ];
 
 export default function useKonamiCode(onUnlock: () => void) {
-  const [keys, setKeys] = useState<string[]>([]);
+  const keysRef = useRef<string[]>([]);
+  const callbackRef = useRef(onUnlock);
+
+  useEffect(() => {
+    callbackRef.current = onUnlock;
+  }, [onUnlock]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      const nextKeys = [...keys, e.key];
-      
-      // Keep only last N inputs
-      if (nextKeys.length > KONAMI_CODE.length) {
-        nextKeys.shift();
-      }
+      const pressedKey = e.key;
 
-      setKeys(nextKeys);
+      if (!pressedKey) return;
 
-      // Check match
-      const isMatch = nextKeys.every((key, idx) => key.toLowerCase() === KONAMI_CODE[idx].toLowerCase());
-      
-      if (isMatch && nextKeys.length === KONAMI_CODE.length) {
-        onUnlock();
-        setKeys([]); // Reset keys
+      const nextKeys = [...keysRef.current, pressedKey].slice(
+        -KONAMI_CODE.length
+      );
+
+      keysRef.current = nextKeys;
+
+      const isMatch =
+        nextKeys.length === KONAMI_CODE.length &&
+        nextKeys.every(
+          (key, idx) =>
+            typeof key === "string" &&
+            key.toLowerCase() === KONAMI_CODE[idx].toLowerCase()
+        );
+
+      if (isMatch) {
+        callbackRef.current();
+        keysRef.current = [];
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [keys, onUnlock]);
 
-  return keys;
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  return keysRef.current;
 }

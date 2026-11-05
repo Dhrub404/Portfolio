@@ -32,10 +32,7 @@ import About from "@/components/sections/About/About";
 import Education from "@/components/sections/Education/Education";
 import Skills from "@/components/sections/Skills/Skills";
 import Projects from "@/components/sections/Projects/Projects";
-import Experience from "@/components/sections/Experience/Experience";
 import Certifications from "@/components/sections/Certifications/Certifications";
-import Achievements from "@/components/sections/Achievements/Achievements";
-import Leadership from "@/components/sections/Leadership/Leadership";
 import Stats from "@/components/sections/Stats/Stats";
 import Contact from "@/components/sections/Contact/Contact";
 import Footer from "@/components/sections/Footer/Footer";
@@ -92,11 +89,8 @@ export default function Home() {
           <Education />
           <Skills />
           <Projects />
-          <Experience />
-          <Certifications />
-          <Achievements />
-          <Leadership />
           <Stats />
+          <Certifications />
           <Contact />
           <Footer />
 

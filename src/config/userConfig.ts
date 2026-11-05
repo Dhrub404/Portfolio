@@ -13,29 +13,30 @@
  */
 export const USER_CONFIG = {
   profile: {
-    name: "Alok Singh",
-    title: "Computer Science Engineering Student & Software Developer",
+    name: "DHRUB MAHAJAN",
+    title: "Information Science Engineering Student & Full-Stack Developer",
     roles: [
-      "Software Developer",
+      "Full-Stack Developer",
+      "MERN Stack Developer",
       "Backend Engineer",
-      "Data Analyst",
-      "NLP & AI Specialist",
-      "Technical Blogger"
+      "Django Developer",
+      "Software Engineer",
+      "Software Developer"
     ],
     avatarUrl: "/avatar.png",
-    bio: "Aspiring developer with experience in building end-to-end web applications using Python, SQL, and Django. Skilled in backend development, database design, and integrating application logic with user-facing components. Interested in scalable applications and applying AI/ML concepts to real-world problems.",
-    resumeUrl: "/alok_singh_resume.pdf",
-    email: "aloksinghchas01@gmail.com",
-    phone: "+91 6207698566",
+    bio: "Aspiring developer who builds end-to-end web applications with Node.js, React, Express.js, MongoDB, and Django. Skilled in full stack development, database schema design, API integration, and application logic, with a focus on scalable applications that solve real-world problems.",
+    resumeUrl: "/Dhrub_Mahajan_resume.pdf",
+    email: "dhruvmahajan5174@gmail.com",
+    phone: "+91 9858048963",
   },
 
   usernames: {
-    github: "SINGHALOK28",
-    leetcode: "singhalok19",
-    codeforces: "singhalok19",
-    codechef: "singhalok19",
-    geeksforgeeks: "singhalok19",
-    linkedin: "alok-singh-261149295",
+    github: "Dhrub404",
+    leetcode: "dhrubmahajan174",
+    codeforces: "dhrubmahajan174",
+    codechef: "dhruv174",
+    geeksforgeeks: "dhrub404",
+    linkedin: "dhrub-mahajan-232664292",
   },
 
   // High-fidelity fallback stats for offline/rate-limit use
@@ -82,46 +83,45 @@ export const USER_CONFIG = {
 
   education: [
     {
-      degree: "Bachelor of Engineering in Computer Science & Engineering",
-      specialization: "Data Science Specialization",
+      degree: "Bachelor of Engineering",
+      specialization: "Information Science & Engineering",
       institution: "PES College of Engineering, Mandya",
       duration: "2023 - 2027",
-      cgpa: "8.45 CGPA",
+      cgpa: "8.42 CGPA",
       courses: [
-        "Data Science & Analysis",
-        "Natural Language Processing",
+        "Object-Oriented Programming",
+        "Computer Networks",
         "Database Management Systems",
         "Web Application Development",
         "Data Structures & Algorithms",
-        "Applied Machine Learning"
+        "Operating System"
       ]
     },
     {
-      degree: "CBSE Class XII (12th Grade)",
+      degree: "JK BOARD Class XII (12th Grade)",
       specialization: "Physics, Chemistry, Mathematics (PCM)",
-      institution: "Chinmaya Vidyalaya, Bokaro",
+      institution: "G.B.H.S.S. Jammu",
       duration: "Passed 2023",
-      cgpa: "86.2% Marks",
+      cgpa: "87.8% Marks",
       courses: [
         "Physics",
         "Chemistry",
         "Mathematics",
-        "Computer Science",
         "English"
       ]
     },
     {
-      degree: "CBSE Class X (10th Grade)",
+      degree: "JK BOARD Class X (10th Grade)",
       specialization: "General Secondary Education",
-      institution: "Chinmaya Vidyalaya, Bokaro",
+      institution: "Pavanatma Convent School, Manwal",
       duration: "Passed 2021",
-      cgpa: "93.4% Marks",
+      cgpa: "84.2% Marks",
       courses: [
         "Mathematics",
-        "Science & Technology",
+        "Science",
         "Social Sciences",
         "English",
-        "Sanskrit"
+        "Hindi"
       ]
     }
   ],
@@ -129,248 +129,173 @@ export const USER_CONFIG = {
   skills: {
     categories: [
       { id: "languages", name: "Languages" },
-      { id: "libraries", name: "Data Science" },
-      { id: "nlp-ai", name: "NLP & AI" },
-      { id: "tools", name: "Web & DB" },
+      { id: "frontend", name: "Frontend" },
+      { id: "backend", name: "Backend" },
+      { id: "database", name: "Databases" },
       { id: "dev-tools", name: "DevTools" }
     ],
     items: [
       // Languages
-      { name: "Python", category: "languages", level: "Expert", value: 90, icon: "python", desc: "Core language for model workflows, backend APIs, and scraping runs." },
-      { name: "SQL", category: "languages", level: "Expert", value: 86, icon: "database", desc: "Writing optimized queries, joins, and database operations." },
-      { name: "C++", category: "languages", level: "Intermediate", value: 84, icon: "cpp", desc: "Primary language for algorithmic logic and data structures." },
-      { name: "C", category: "languages", level: "Intermediate", value: 76, icon: "c", desc: "System-level fundamentals and memory allocation." },
-      { name: "Java", category: "languages", level: "Intermediate", value: 78, icon: "java", desc: "Object-oriented structures and desktop integrations." },
+      { name: "Python", category: "languages", level: "Intermediate", value: 82, icon: "python", desc: "Backend development with Django, scripting, and problem solving." },
+      { name: "C++", category: "languages", level: "Expert", value: 90, icon: "cpp", desc: "Primary language for algorithmic logic and data structures." },
+      // { name: "Java", category: "languages", level: "Intermediate", value: 76, icon: "java", desc: "Object-oriented programming and core CS fundamentals." },
+      { name: "JavaScript", category: "languages", level: "Expert", value: 88, icon: "javascript", desc: "Asynchronous programming, DOM handling, and full MERN stack development." },
+      { name: "SQL", category: "languages", level: "Expert", value: 86, icon: "database", desc: "Writing optimized queries, joins, and relational database operations." },
 
-      // Data Science Libraries
-      { name: "Pandas", category: "libraries", level: "Expert", value: 88, icon: "pandas", desc: "Tabular data cleaning, transformations, and aggregation pipelines." },
-      { name: "NumPy", category: "libraries", level: "Expert", value: 86, icon: "numpy", desc: "Linear algebra, multidimensional matrix arrays, and array operations." },
-      { name: "Matplotlib", category: "libraries", level: "Intermediate", value: 82, icon: "chart", desc: "Plotting static analytical charts and training performance visuals." },
-      { name: "Seaborn", category: "libraries", level: "Intermediate", value: 80, icon: "chart", desc: "Heatmaps, distributions, and customized statistical graphs." },
-      { name: "Scikit-learn", category: "libraries", level: "Intermediate", value: 84, icon: "scikit", desc: "Preprocessing pipelines, classification splits, and predictive estimators." },
+      // Frontend
+      { name: "HTML & CSS", category: "frontend", level: "Intermediate", value: 84, icon: "web", desc: "Building responsive layouts and clean, accessible interfaces." },
+      { name: "React", category: "frontend", level: "Expert", value: 88, icon: "react", desc: "Component-based UIs, hooks, state management, and routing." },
 
-      // NLP & AI
-      { name: "spaCy", category: "nlp-ai", level: "Expert", value: 85, icon: "nlp", desc: "Industrial-grade entity extraction, tagging, and lemmatization." },
-      { name: "NLTK", category: "nlp-ai", level: "Expert", value: 84, icon: "nlp", desc: "Text tokenization, sentiment heuristics, and vocabulary corpus parsing." },
-      { name: "Sentence Transformers", category: "nlp-ai", level: "Expert", value: 88, icon: "transformer", desc: "Generating contextual embeddings and semantic similarity scores." },
+      // Backend
+      { name: "Django", category: "backend", level: "Intermediate", value: 78, icon: "django", desc: "Building web apps and REST APIs with models, views, and the ORM." },
+      { name: "Node.js", category: "backend", level: "Intermediate", value: 80, icon: "nodejs", desc: "Server-side JavaScript and scalable backend services." },
+      { name: "Express.js", category: "backend", level: "Expert", value: 87, icon: "express", desc: "Designing REST APIs, middleware, and authentication flows." },
 
-      // Web & DB
-      { name: "MySQL", category: "tools", level: "Expert", value: 85, icon: "mysql", desc: "Relational schema design, transactions, and indexing." },
-      { name: "HTML & CSS", category: "tools", level: "Intermediate", value: 82, icon: "web", desc: "Building responsive grids, navigation menus, and clean web forms." },
-      { name: "JS", category: "tools", level: "Intermediate", value: 84, icon: "javascript", desc: "Creating extensions, script hooks, and asynchronous client events." },
-      { name: "Tableau", category: "tools", level: "Intermediate", value: 80, icon: "tableau", desc: "Creating visual dashboard sheets, forensic graphs, and business metrics." },
+      // Databases
+      { name: "MongoDB", category: "database", level: "Expert", value: 88, icon: "mongodb", desc: "NoSQL schema design, aggregation pipelines, and Mongoose integration." },
+      { name: "MySQL", category: "database", level: "Intermediate", value: 80, icon: "mysql", desc: "Relational schema design, indexing, and transactions." },
+      { name: "SQLite", category: "database", level: "Intermediate", value: 78, icon: "sqlite", desc: "Lightweight relational storage used with Django's ORM." },
 
       // Developer Tools
-      { name: "Git and GitHub", category: "dev-tools", level: "Expert", value: 90, icon: "git", desc: "Distributed version control, remote repos, and project workflows." },
-      { name: "Chrome Extension", category: "dev-tools", level: "Intermediate", value: 85, icon: "chrome", desc: "Building script injections and threat monitoring browser extensions." },
-      { name: "Azure DevOps", category: "dev-tools", level: "Intermediate", value: 80, icon: "azure", desc: "Automating builds, testing hooks, and branch triggers using YAML." },
-      { name: "Streamlit", category: "dev-tools", level: "Intermediate", value: 85, icon: "streamlit", desc: "Deploying local ML dashboard prototypes in pure Python." }
+      { name: "Git and GitHub", category: "dev-tools", level: "Expert", value: 90, icon: "git", desc: "Version control, branching, pull requests, and project workflows." },
+      { name: "API Testing", category: "dev-tools", level: "Intermediate", value: 80, icon: "api", desc: "Testing and validating REST endpoints with Postman." },
+      { name: "Vercel & Render", category: "dev-tools", level: "Expert", value: 86, icon: "cloud", desc: "Deploying and hosting frontend and backend applications." }
     ]
   },
 
-  experiences: [
-    {
-      role: "Quantitative Research Virtual Experience",
-      company: "JPMorgan Chase & Co. (via Forage)",
-      duration: "Sept 2025",
-      achievements: [
-        "Completed a simulation focused on quantitative research methods and predictive modeling.",
-        "Analyzed a book of loans to estimate customer probability of default using Python.",
-        "Utilized dynamic programming to convert FICO scores into categorical data to predict defaults."
-      ],
-      techs: ["Python", "Data Analysis", "Dynamic Programming", "Statistics"]
-    },
-    {
-      role: "Data Analytics Virtual Experience",
-      company: "Deloitte Australia (via Forage Simulation)",
-      duration: "2024 (Virtual Job Simulation)",
-      achievements: [
-        "Completed a Deloitte simulation involving forensic data analysis, data categorization, and Tableau dashboarding.",
-        "Created an interactive business intelligence sheet using Tableau to map forensic statistics.",
-        "Utilized Excel worksheets to classify dataset categories, filter noise, and draft data-driven conclusions."
-      ],
-      techs: ["Tableau", "Excel", "Data Analysis", "Forensics"]
-    },
-    {
-      role: "AI/ML & Full-Stack Developer",
-      company: "Independent Projects & PES College of Engineering",
-      duration: "2023 - 2026",
-      achievements: [
-        "Built Jan Saathi, a civic issue reporting platform with role-based portals, Google Maps routing, and Vertex AI classification.",
-        "Developed an AI resume screening system that parses resumes, extracts skills, and scores candidates using NLP embeddings.",
-        "Created an Intelligent Surveillance Hub for real-time OSINT threat analysis and browser-based risk detection.",
-        "Implemented a Spotify analytics platform with interactive dashboards and listening insights."
-      ],
-      techs: ["Python", "React.js", "Django REST", "NLP", "Chrome Extension", "Vertex AI"]
-    }
-  ],
+  experiences: [],
 
-  projects: [
+   projects: [
     {
-      id: "jan-saathi",
-      title: "Jan Saathi - Civic Issue Reporting",
-      category: "Full-Stack & AI",
-      shortDesc: "A civic action portal with automated Vertex AI classification and Google Maps API routing.",
-      longDesc: "Jan Saathi is a full-stack civic issue reporting system built to bridge public communication. Includes role-based portals (Citizen, Contractor, Admin) with secure JWT tokens. Integrates Google Maps APIs and Google Vertex AI image classification to automatically identify report types, tag locations, and optimize priority routing lists.",
-      techStack: ["React.js", "Django REST", "MongoDB", "Vertex AI", "Google Maps API"],
-      github: "",
-      demo: "https://drive.google.com/file/d/1EUTmtVqzEnwQ9j7d847GlRKbMN78Co0Z/view",
-      demoImage: "/projects/jansaathi.png",
-      featured: true,
-      status: "Production Ready",
-      metrics: { resolutionSpeed: "92%", APIlatency: "45ms", detectionAccuracy: "94%" },
-      challenges: "Configuring multi-role route authentication and secure image uploads without overloading DB logs.",
-      learnings: "Splitting uploads to static buckets and designing JWT hooks that dynamically verify user clearance levels.",
-      architectureUrl: "/architecture_jansaathi.png"
-    },
-    {
-      id: "resume-intelligence",
-      title: "AI-Driven Resume Intelligence",
-      category: "Natural Language Processing",
-      shortDesc: "NLP scanning engine parsing resumes and performing candidate scoring via semantic embedding analysis.",
-      longDesc: "A semantic parsing utility that extracts over 200+ specialized tech skills from PDF/DOCX resumes. Utilizes spaCy, NLTK tokenizers, and sentence-transformers (all-MiniLM-L6-v2) to compute cosine similarity scores, delivering 35% higher precision than classic keyword matching algorithms.",
-      techStack: ["Python", "Streamlit", "Sentence Transformers", "spaCy", "NLTK"],
-      github: "https://github.com/SINGHALOK28/AI-Resume-Screening-Skill-Gap-Analyzer",
-      demo: "https://ai-resume-screening-skill-gap-analyzer.onrender.com/",
-      demoImage: "/projects/resume_nlp.png",
-      featured: true,
-      status: "Stable v1.0",
-      metrics: { semanticAccuracy: "90%", matchTime: "<2s", screeningReduction: "60%" },
-      challenges: "Normalizing messy unstructured text from varying PDF schemas and font styling tags.",
-      learnings: "Creating robust regex cleanup layers and utilizing custom vocabulary boundaries in spaCy's analyzer.",
-      architectureUrl: "/architecture_nlp.png"
-    },
-    {
-      id: "spotify-analytics",
-      title: "Spotify Analytics & Popularity Prediction Platform",
-      category: "Data Analytics & Full-Stack",
-      shortDesc: "A data-intensive analytics platform for music insights, recommendations, and popularity forecasting over 100K+ tracks.",
-      longDesc: "Engineered a full-stack music analytics platform managing 100K+ music records with 10+ REST APIs for search, recommendations, machine learning inference, and authentication. Built Apache Airflow DAGs to automate ETL pipelines for extraction, transformation, validation, and PostgreSQL loading, reducing manual processing by over 90%. Implemented ML-based popularity forecasting using Random Forest and XGBoost along with a cosine similarity recommendation engine for real-time comparisons across 100K+ tracks.",
-      techStack: ["FastAPI", "React.js", "PostgreSQL", "Apache Airflow", "Scikit-learn", "Docker", "SQLAlchemy", "JWT"],
-      github: "https://github.com/SINGHALOK28/spotify-analytics-platform",
-      demo: "https://spotify-analytics-platform.vercel.app",
-      demoImage: "/projects/spotify-analytics.svg",
+      id: "algomentor",
+      title: "AlgoMentor: An Adaptive Coding Mentor",
+      category: "Full-Stack MERN",
+      shortDesc: "An adaptive competitive programming platform that finds your weak topics and builds a personalised practice path.",
+      longDesc: "AlgoMentor is a MERN-stack platform that adapts to each learner. Five backend engines (weakness, unlock, practice, roadmap, and revision) analyse performance, unlock topics progressively, recommend problems, generate roadmaps, and schedule revisions. It integrates live LeetCode and Codeforces APIs to pull real problem-solving data.",
+      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "LeetCode API", "Codeforces API"],
+      github: "https://github.com/dhrub404/algomentor",
+      demo: "https://algomentor-dusky.vercel.app/",
+      demoImage: "/projects/algomentor.png",
       featured: true,
       status: "Live v1.0",
-      metrics: { recordsManaged: "100K+", apiEndpoints: "10+", automationGain: "90%+" },
-      challenges: "Designing scalable ETL automation and real-time recommendation workflows while maintaining performance across large-scale music datasets.",
-      learnings: "Combining containerized deployment, workflow orchestration, and ML inference into a reliable end-to-end analytics stack."
+      metrics: { backendEngines: "5", platformsIntegrated: "4", stack: "MERN" },
+      challenges: "Designing five engines that share one user performance model without duplicating logic or slowing API responses.",
+      learnings: "Structuring MongoDB schemas and service layers so each engine stays independent while feeding the same learner profile."
     },
+    {
+  id: "ai-job-finder",
+  title: "AI Job Finder: Automated Job Discovery Bot",
+  category: "Automation & AI",
+  shortDesc: "An automated AI-powered job discovery platform that collects tech openings daily, filters India-eligible opportunities, and delivers personalized job updates through Telegram.",
+  longDesc: "AI Job Finder is an automated job aggregation and notification platform that collects technology job openings from  multiple company career pages, job portals, and remote job boards. It normalizes job listings, filters opportunities based on location, experience, and work mode, and delivers ranked daily job digests to subscribers through a Telegram bot. The platform uses Python-based job scraping adapters, Turso (hosted SQLite) for persistent storage, GitHub Actions for scheduled daily collection, and Vercel serverless functions with Telegram webhooks for real-time bot interactions. It also supports AI-powered personalized job matching using Claude, allowing users to receive relevant opportunities based on their skills, experience, and resumes.",
+  techStack: [
+    "Python",
+    "Telegram Bot API",
+    "Claude AI",
+    "GitHub Actions",
+    "Turso (SQLite)",
+    "Vercel",
+    "YAML",
+    "REST API",
+    "Pytest"
+  ],
+  github: "https://github.com/Dhrub404/ai-job-finder",
+  demoImage: "/projects/aiJobFinder.png",
+  featured: true,
+  status: "v1.0",
+  metrics: {
+    jobSources: "20+ Job Platforms & Career Sites",
+    automation: "Daily at 6:45 AM IST",
+    delivery: "Telegram Bot",
+    infrastructure: "GitHub Actions + Turso + Vercel",
+    aiMatching: "Claude-Powered Personalization"
+  },
+  challenges: "Building a reliable multi-source job aggregation pipeline that handles different career-site structures, normalizes inconsistent job data, filters India-eligible opportunities, and prevents duplicate notifications while running on free-tier cloud infrastructure.",
+  learnings: "Designing an automated serverless architecture using GitHub Actions, Turso, and Vercel; building scalable Python scraping adapters; integrating Telegram webhooks; and implementing AI-powered job matching with persistent user preferences."
+},
+        {
+      id: "resume-ai",
+      title: "Resume AI: Intelligent Career Builder",
+      category: "Full-Stack & AI",
+      shortDesc: "An AI-powered resume builder that scores your resume, rewrites weak bullet points, and previews changes live.",
+      longDesc: "Resume AI is a full-stack platform for building and improving resumes. Users pick a template (Modern, Executive, Classic), edit content with a live preview, and use the OpenAI API to get a resume score with improvement tips or to rewrite bullet points and fix grammar. The React frontend has an interactive Three.js 3D login with a reactive starfield, and the Django REST backend handles JWT-secured accounts and resume data.",
+      techStack: ["React.js", "Vite", "Three.js", "Framer Motion", "Django REST", "JWT", "OpenAI API", "SQLite"],
+      github: "https://github.com/Dhrub404/Resume-AI",
+      demoImage: "/projects/resumeAI.png",
+      featured: true,
+      status: "v1.0",
+      metrics: { aiFeatures: "Analysis + Rewriting", templates: "Modern, Executive, Classic", auth: "JWT" },
+      challenges: "Connecting the OpenAI API to the resume editor so suggestions arrive quickly and apply cleanly to the content being edited.",
+      learnings: "Building a decoupled React and Django REST stack with JWT authentication, and integrating an LLM API into a real product workflow."
+    },
+    {
+      id: "ecommerce-platform",
+      title: "VoltCart E-Commerce Platform",
+      category: "Full-Stack Web App",
+      shortDesc: "A full-stack online store with a React frontend and a Django REST backend.",
+      longDesc: "A full-stack e-commerce application with product browsing, cart, and secure user authentication. The React frontend talks to a Django REST Framework backend through JWT-protected APIs.",
+      techStack: ["React.js", "Django REST", "JWT", "Python"],
+      github: "",
+      demo: "",
+      demoImage: "/projects/ecommerce_demo.png",
+      featured: true,
+      status: "Live v1.0",
+      metrics: { frontend: "React", backend: "Django REST", auth: "JWT" },
+      challenges: "Keeping the React frontend and Django API in sync across authentication, cart state, and product data.",
+      learnings: "Designing clean REST endpoints and handling JWT-based authentication across a decoupled frontend and backend."
+    },
+    
     {
       id: "portfolio-website",
       title: "Personal Portfolio Website",
       category: "Web Apps",
-      shortDesc: "A dynamic portfolio site showcasing projects, achievements, stats, and contact information in a futuristic UI.",
-      longDesc: "This portfolio was built as a polished personal brand website to present my work, technical skills, projects, and experience in a modern interactive experience. It combines animated sections, a configurable content system, and a lightweight chat assistant for visitor interaction.",
+      shortDesc: "A dynamic portfolio showcasing projects, skills, certifications, and contact information.",
+      longDesc: "A personal brand website presenting my projects, technical skills, and certifications in a modern, interactive layout. All content comes from one central configuration file, so updating the portfolio is quick.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React"],
-      github: "https://github.com/SINGHALOK28/portfolio",
+      github: "https://github.com/Dhrub404/Portfolio",
       demo: "/",
       demoImage: "/projects/portfolio-website.svg",
       featured: true,
       status: "Live Portfolio",
-      metrics: { sections: "12+", interactions: "Animated UI", visitorExperience: "Immersive" },
-      challenges: "Designing a cohesive, high-performance experience across animated sections while keeping the content easy to update.",
-      learnings: "Creating a centralized configuration model that makes portfolio content updates simple and maintainable."
-    },
-    {
-      id: "defence-osint",
-      title: "Intelligent Surveillance Hub",
-      category: "Web Security Utilities",
-      shortDesc: "Real-time threat level extension detecting entities and highlighting risks.",
-      longDesc: "A modular Chrome extension designed to scan live web content, isolating defense-related terminology (countries, military assets, agencies). Uses a custom threat weighting engine to highlight threat indicators and categorize sites (LOW/MEDIUM/HIGH) with negligible browser impact.",
-      techStack: ["JS", "Chrome Extension APIs", "NLP Analytics", "Threat Weighting"],
-      github: "https://github.com/SINGHALOK28/Intelligent-Surveillance-Hub",
-      demo: "https://github.com/SINGHALOK28/Intelligent-Surveillance-Hub",
-      demoImage: "/projects/osint.png",
-      featured: true,
-      status: "Beta v0.8",
-      metrics: { analysisLatency: "<1s", scanReduction: "70%", threatRecall: "91%" },
-      challenges: "Avoiding browser lockups while asynchronously scanning heavy HTML documents.",
-      learnings: "Offloading parsing logic to Chrome service workers and running element highlights on idle frames.",
-      architectureUrl: "/architecture_osint.png"
+      metrics: { content: "Config-driven", animations: "Framer Motion", language: "TypeScript" },
+      challenges: "Keeping a polished animated UI fast while making content easy to update.",
+      learnings: "Using a centralised configuration model so adding a project or certificate is a one-file change."
     }
   ],
-
-  achievements: [
-    {
-      title: "1st Place Winner - Colossus 2.0 Hackathon",
-      issuer: "DR. B R Ambedkar Institute of Technology, BENGALURU",
-      date: "2025",
-      rarity: "legendary",
-      desc: "Developed the top civic safety system prototype among regional college engineering teams.",
-      reward: "Gold Medal Winner"
-    },
-    {
-      title: "Top 40 Campus Leaderboard - GeeksforGeeks",
-      issuer: "GeeksforGeeks Institution Rankings",
-      date: "2025",
-      rarity: "epic",
-      desc: "Consistently solved complex algorithms and database structures, ranking in the campus top 40 profiles.",
-      reward: "Coding Expert"
-    },
-    {
-      title: "PES College Football Representative",
-      issuer: "VTU Mysuru Division Athletics",
-      date: "2024",
-      rarity: "rare",
-      desc: "Selected for the PES varsity squad competing in VTU inter-collegiate football tournaments.",
-      reward: "Varsity Player"
-    }
-  ],
+  achievements: [],
 
   certifications: [
     {
-      title: "XPro DevOps Automation Certification",
-      issuer: "XPro",
-      date: "2024",
-      credentialId: "XPRO-DEVOPS",
-      credentialUrl: "/certificates/Xpro.pdf",
-      pdfUrl: "/certificates/Xpro.pdf",
-      skillsGained: ["Azure DevOps", "CI/CD", "YAML", "Git"],
-      badgeColor: "#0078D7"
+      title: "Object-Oriented Design",
+      issuer: "Coursera",
+      date: "June 2026",
+      credentialId: "COURSERA-UALBERTA-OOD",
+      credentialUrl: "https://coursera.org/share/62c33d6ef21ab79a0de9da7cacdc42e0",
+      pdfUrl: "https://coursera.org/share/62c33d6ef21ab79a0de9da7cacdc42e0",
+      skillsGained: ["Object-Oriented Design", "UML Class Diagrams", "Design Patterns", "SOLID Principles", "Software Architecture"],
+      badgeColor: "#007C41"
     },
     {
-      title: "Deloitte Australia Data Analytics Job Simulation",
-      issuer: "Deloitte Australia / Forage",
-      date: "Sept 2025",
-      credentialId: "FORAGE-DELOITTE-DA-SIM",
-      credentialUrl: "https://theforage.com",
-      pdfUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_g4DZ9vz7gdRFfWJgj_1757267638420_completion_certificate.pdf",
-      skillsGained: ["Forensic Data Analysis", "Tableau Reporting", "Excel Aggregations", "Business Communication"],
-      badgeColor: "#00a3e0"
+      title: "Agile Project Management",
+      issuer: "Coursera",
+      date: "December 2025",
+      credentialId: "COURSERA-CUBOULDER-AGILE",
+      credentialUrl: "https://coursera.org/share/418bcb853c4e828adf0affee36beb5f2",
+      pdfUrl: "https://coursera.org/share/418bcb853c4e828adf0affee36beb5f2",
+      skillsGained: ["Agile Methodologies", "Scrum", "Sprint Planning", "Project Planning", "Stakeholder Communication"],
+      badgeColor: "#CFB87C"
     },
     {
-      title: "Quantitative Research Virtual Experience",
-      issuer: "JPMorgan Chase & Co. / Forage",
-      date: "Sept 2025",
-      credentialId: "FORAGE-JPMORGAN-QUANT",
-      credentialUrl: "https://theforage.com",
-      pdfUrl: "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_g4DZ9vz7gdRFfWJgj_1758031284558_completion_certificate.pdf",
-      skillsGained: ["Algorithm Development", "Credit Analysis", "Data Analysis", "Financial Derivatives", "Python", "Statistics"],
-      badgeColor: "#0A2F64"
+      title: "The Bits and Bytes of Computer Networking",
+      issuer: "Google / Coursera",
+      date: "January 2026",
+      credentialId: "COURSERA-GOOGLE-NETWORKING",
+      credentialUrl: "https://coursera.org/share/5234a3fd8cf6e03023c19840777c6fe1",
+      pdfUrl: "https://coursera.org/share/5234a3fd8cf6e03023c19840777c6fe1",
+      skillsGained: ["TCP/IP", "OSI Model", "DNS", "Network Protocols", "Subnetting"],
+      badgeColor: "#4285F4"
     }
   ],
 
-  leadership: [
-    {
-      position: "Vice President",
-      organization: "DOT Club (Official CSE Data Science Club)",
-      duration: "Active Role",
-      details: [
-        "Organizing and conducting technical events, seminars, and workshops for the Computer Science department.",
-        "Mentoring and upskilling junior fellows with core Data Science technologies.",
-        "Managing the tech ecosystem, event operations, and coordinating leadership responsibilities within the club."
-      ]
-    },
-    {
-      position: "PES College Coding Group Member",
-      organization: "PES College of Engineering",
-      duration: "2023 - 2026",
-      details: [
-        "Participated in campus competitive code sprints, reviewing algorithm optimization styles.",
-        "Collaborated with developers in building full-stack applications and Chrome utils.",
-        "Coordinated team projects for VTU regional hackathons and inter-college contests."
-      ]
-    }
-  ]
+  leadership: []
 };

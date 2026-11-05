@@ -143,7 +143,7 @@ export default function Hero() {
           <div className="inline-flex items-center space-x-2 border border-emerald/30 bg-emerald/5 px-3 py-1.5 rounded-lg voxel-clip w-fit">
             <span className="w-2 h-2 rounded-full bg-emerald animate-pulse shadow-[0_0_8px_#50c878]" />
             <span className="font-pixel text-[10px] tracking-wider text-emerald uppercase">
-              CSE (DATA SCIENCE) // CLASS OF 2027
+              INFORMATION SCIENCE ENGINEERING // CLASS OF 2027
             </span>
           </div>
 
@@ -176,7 +176,7 @@ export default function Hero() {
             </button>
             <a
               href={config.profile.resumeUrl}
-              download="Alok_Singh_Resume.pdf"
+              download="Dhrub_Mahajan_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               onClick={handleActionClick}

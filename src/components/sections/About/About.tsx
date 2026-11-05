@@ -94,10 +94,10 @@ export default function About() {
   }, [isInView, xpSoundPlayed]);
 
   const journeySteps = [
-    { year: "2023", title: "Software Engineering Foundations", desc: "Entered Computer Science Engineering. Mastered C++, OOPs, and algorithmic foundations." },
-    { year: "2024", title: "Data Science Specialization", desc: "Shifted focus to Data Science, Probability, Statistics, and Data Science libraries in Python." },
-    { year: "2025", title: "Research & Hackathons", desc: "Developed machine learning projects and co-authored bio-informatics research." },
-    { year: "2026", title: "Production Deployment", desc: "Deploying scalable models and apps, utilizing Git, Vercel, and Streamlit for seamless pipelines, and entering industry role." }
+    { year: "2023", title: "Information Science Foundations", desc: "Entered Information Science Engineering. Mastered C++, OOPs, and core Data Structures & Algorithms." },
+    { year: "2024", title: "Full-Stack Development (MERN & Django)", desc: "Built end-to-end web applications with React.js, Node.js, Express.js, MongoDB, and Django." },
+    { year: "2025", title: "REST APIs & System Design", desc: "Engineered robust backend architectures, authentication flows, and scalable database schemas." },
+    { year: "2026", title: "Production Deployment", desc: "Deploying high-performance, scalable web solutions and preparing for industry software engineering roles." }
   ];
 
   return (
@@ -171,7 +171,7 @@ export default function About() {
                   </motion.div>
                   <div>
                     <h3 className="font-mono text-xl font-bold tracking-wide">{config.profile.name}</h3>
-                    <p className="font-mono text-xs text-emerald uppercase tracking-wider mb-1.5">Specialization: Data Science</p>
+                    <p className="font-mono text-xs text-emerald uppercase tracking-wider mb-1.5">Information Science & Engineering // Class of 2027</p>
                     <div className="flex items-center gap-3">
                       <a 
                         href={`https://github.com/${config.usernames.github}`} 
@@ -195,10 +195,15 @@ export default function About() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className="font-pixel text-[10px] text-gold-glow block">DATA_SCIENCE_CORE</span>
+                  <span className="font-pixel text-[10px] text-gold-glow block">ISE_MERN_CORE</span>
                   <span className="font-mono text-[10px] text-gray-500">SYS: ACTIVE</span>
                 </div>
               </div>
+
+              {/* Summary Bio */}
+              <p className="font-sans text-gray-300 text-sm leading-relaxed mb-6 border-l-2 border-emerald/50 pl-3.5 bg-emerald/[0.02] py-1">
+                {config.profile.bio}
+              </p>
 
               {/* Core Competencies Progress */}
               <div className="space-y-4 font-mono text-sm">
@@ -206,13 +211,13 @@ export default function About() {
                   <span className="text-xs text-emerald font-pixel block tracking-wider uppercase">// CORE_COMPETENCIES</span>
                   <div>
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-gray-400">Data Wrangling & EDA</span>
-                      <span className="text-emerald">92% Integrity</span>
+                      <span className="text-gray-400">Full-Stack Web Dev (MERN & Django)</span>
+                      <span className="text-emerald">94% Mastery</span>
                     </div>
                     <div className="w-full h-2.5 bg-obsidian border border-[#304447] p-0.5 rounded-sm overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
-                        animate={isInView ? { width: "92%" } : {}}
+                        animate={isInView ? { width: "94%" } : {}}
                         transition={{ duration: 1.2, ease: "easeOut", delay: 0.1 }}
                         className="h-full bg-emerald shadow-[0_0_6px_rgba(80,200,120,0.6)]"
                       />
@@ -220,13 +225,13 @@ export default function About() {
                   </div>
                   <div>
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-gray-400">ML Modeling & Optimization</span>
-                      <span className="text-cyan-glow">88% Accuracy</span>
+                      <span className="text-gray-400">Backend APIs & Authentication</span>
+                      <span className="text-cyan-glow">90% Proficiency</span>
                     </div>
                     <div className="w-full h-2.5 bg-obsidian border border-[#304447] p-0.5 rounded-sm overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
-                        animate={isInView ? { width: "88%" } : {}}
+                        animate={isInView ? { width: "90%" } : {}}
                         transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
                         className="h-full bg-cyan-glow shadow-[0_0_6px_rgba(0,255,240,0.6)]"
                       />
@@ -234,13 +239,13 @@ export default function About() {
                   </div>
                   <div>
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-gray-400">Deployment</span>
-                      <span className="text-purple-glow">60%</span>
+                      <span className="text-gray-400">Database Design & System Architecture</span>
+                      <span className="text-purple-glow">86%</span>
                     </div>
                     <div className="w-full h-2.5 bg-obsidian border border-[#304447] p-0.5 rounded-sm overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
-                        animate={isInView ? { width: "60%" } : {}}
+                        animate={isInView ? { width: "86%" } : {}}
                         transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
                         className="h-full bg-purple-glow shadow-[0_0_6px_rgba(186,85,211,0.6)]"
                       />
@@ -252,29 +257,29 @@ export default function About() {
                   <div className="flex items-center space-x-3">
                     <Swords className="w-5 h-5 text-emerald" />
                     <div>
-                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">LeetCode & CodeChef</span>
+                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">LeetCode & DSA</span>
                       <span className="text-sm font-bold text-white">{totalSolved} Solved</span>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Shield className="w-5 h-5 text-cyan-glow" />
                     <div>
-                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Model Deployment</span>
-                      <span className="text-sm font-bold text-white font-mono">Git, Vercel, Streamlit</span>
+                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Full-Stack Stack</span>
+                      <span className="text-sm font-bold text-white font-mono">MERN & Django</span>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Trophy className="w-5 h-5 text-gold-glow" />
                     <div>
-                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Academic Excellence</span>
-                      <span className="text-sm font-bold text-white">{latestCGPA}</span>
+                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Academic Program</span>
+                      <span className="text-sm font-bold text-white">ISE (Class 2027)</span>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Activity className="w-5 h-5 text-purple-glow" />
                     <div>
-                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Analytical Speed</span>
-                      <span className="text-sm font-bold text-white">Sub-50ms Inference</span>
+                      <span className="text-xs text-gray-500 block uppercase font-pixel text-[8px]">Architecture Focus</span>
+                      <span className="text-sm font-bold text-white">Scalable Systems</span>
                     </div>
                   </div>
                 </div>

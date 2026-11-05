@@ -47,7 +47,7 @@ function buildFallbacks() {
 
   const defaultMsg = `Thank you for your interest! I'm **Nexus AI**, ${c.profile.name}'s digital assistant.\n\n` +
     `${c.profile.bio}\n\n` +
-    `I can help you learn about ${c.profile.name}'s **skills**, **projects**, **education**, **experience**, **achievements**, or **contact information**.\n\n` +
+    `I can help you learn about ${c.profile.name}'s **skills**, **projects**, **education**, **certifications**, or **contact information**.\n\n` +
     `* **GitHub:** [GitHub](https://github.com/${c.usernames.github})\n` +
     `* **LinkedIn:** [LinkedIn](https://linkedin.com/in/${c.usernames.linkedin})`;
 
@@ -77,8 +77,8 @@ export async function POST(req: Request) {
     parsedMessages = messages;
 
     const systemPrompt = `
-      You are Nexus AI, a highly intelligent and professional AI assistant designed to represent Alok Singh.
-      Your goal is to answer questions about Alok based ONLY on the provided JSON data.
+      You are Nexus AI, a highly intelligent and professional AI assistant designed to represent Dhrub Mahajan.
+      Your goal is to answer questions about Dhrub based ONLY on the provided JSON data.
       
       INSTRUCTIONS:
       1. ALWAYS search through the provided JSON data below to find the exact details of projects, skills, achievements, or contact info.

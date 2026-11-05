@@ -50,13 +50,9 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
           const parsed = JSON.parse(stored);
           // Simple validation check: ensure it has key sections
           if (parsed && parsed.profile && parsed.skills) {
-            // Force sync from source if the new Vice President role is missing from the stale cache
-            if (!JSON.stringify(parsed.leadership).includes("Vice President")) {
-              parsed.leadership = USER_CONFIG.leadership;
-              parsed.experiences = USER_CONFIG.experiences;
-            }
-            
-            // Force usernames and certifications to always sync from source code to avoid stale caches
+            // Force sync from source code to avoid stale caches
+            parsed.leadership = USER_CONFIG.leadership;
+            parsed.achievements = USER_CONFIG.achievements;
             parsed.usernames = USER_CONFIG.usernames;
             parsed.certifications = USER_CONFIG.certifications;
             parsed.experiences = USER_CONFIG.experiences;

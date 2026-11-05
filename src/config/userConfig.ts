@@ -11,6 +11,30 @@
  * 2. React components import this object (via PortfolioConfigContext) and map over the arrays to dynamically generate the UI.
  * 3. To update any text, image, or link on the website, you only need to modify this file instead of hunting through JSX code.
  */
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  duration: string;
+  achievements: string[];
+  techs: string[];
+}
+
+export interface AchievementItem {
+  title: string;
+  issuer: string;
+  date: string;
+  rarity: string;
+  desc: string;
+  reward: string;
+}
+
+export interface LeadershipItem {
+  position: string;
+  organization: string;
+  duration: string;
+  details: string[];
+}
+
 export const USER_CONFIG = {
   profile: {
     name: "DHRUB MAHAJAN",
@@ -47,7 +71,7 @@ export const USER_CONFIG = {
       forks: 9,
       commitsThisYear: 320,
       streak: 22,
-      contributions: []
+      contributions: [] as { date: string; count: number }[]
     },
     leetcode: {
       solved: 184,
@@ -163,7 +187,7 @@ export const USER_CONFIG = {
     ]
   },
 
-  experiences: [],
+  experiences: [] as ExperienceItem[],
 
    projects: [
     {
@@ -287,7 +311,7 @@ export const USER_CONFIG = {
 },
 
   ],
-  achievements: [],
+  achievements: [] as AchievementItem[],
 
   certifications: [
     {
@@ -322,5 +346,5 @@ export const USER_CONFIG = {
     }
   ],
 
-  leadership: []
+  leadership: [] as LeadershipItem[]
 };

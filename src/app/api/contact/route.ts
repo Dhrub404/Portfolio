@@ -12,12 +12,12 @@ export async function POST(request: Request) {
       );
     }
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
     if (!accessKey) {
       console.error("WEB3FORMS_ACCESS_KEY is not defined in environment variables");
       return NextResponse.json(
-        { success: false, message: "Server configuration error" },
+        { success: false, message: "Server configuration error: Web3Forms access key is missing." },
         { status: 500 }
       );
     }

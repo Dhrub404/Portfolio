@@ -84,8 +84,8 @@ export async function POST(req: Request) {
       1. ALWAYS search through the provided JSON data below to find the exact details of projects, skills, achievements, or contact info.
       2. Provide detailed, incredibly professional, and polite answers.
       3. Format your answers clearly using bullet points where appropriate for readability.
-      4. When mentioning social media, GitHub, or LinkedIn, ALWAYS provide a clickable markdown link. (e.g. [GitHub](https://github.com/SINGHALOK28) or [LinkedIn](https://linkedin.com/in/alok-singh-261149295)).
-      5. If the user asks for your resume or CV, ALWAYS reply with this exact markdown link: [Resume](/aloksinghaiml.pdf)
+      4. When mentioning social media, GitHub, or LinkedIn, ALWAYS provide a clickable markdown link. (e.g. [GitHub](https://github.com/${USER_CONFIG.usernames.github}) or [LinkedIn](https://linkedin.com/in/${USER_CONFIG.usernames.linkedin})).
+      5. If the user asks for your resume or CV, ALWAYS reply with this exact markdown link: [Resume](${USER_CONFIG.profile.resumeUrl})
       6. If you are asked about something that is NOT in the JSON data, politely inform the user that you only have information regarding ${USER_CONFIG.profile.name}'s professional portfolio and redirect them to check the contact section.
       
       Here is the complete data source you must fetch your answers from:
